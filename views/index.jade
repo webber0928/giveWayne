@@ -1,0 +1,65 @@
+extends layout
+
+block content
+  #about.section
+    .container
+      .row
+        img.center-block.img-circle(src="http://graph.facebook.com/bird23074035/picture?width=360&height=360" alt="Hi I'm webber!")
+        .info.text-center
+          h1.text-warning 嗨! 這是我的個人網頁
+          p.lead.text-info
+            | 我是 WEBBER! 我是一個網頁的開發者...
+          a.btn.btn-lg.btn-success 聯絡我
+  .section.bg-info
+    .container
+      .row.text-center
+        h1 我喜歡
+        p 美味的食物、好看的網站、籃球賽事、籃球鞋、牛排、音樂、貓咪、好看的網站、麥當勞、珍珠奶茶...，和許多其他的事情 :)
+  .section
+    .container
+      .row.text-center
+        h1 各種技能
+        .col-md-4.col-sm-6
+          .thumbnail.bg-warning
+            i.glyphicon.glyphicon-tree-conifer.bg-warning.img-circle
+            .caption
+              h3 吃貨
+              p 
+                | 吃遍台北各個美食，但是只限於吃到飽的餐廳！
+        .col-md-4.col-sm-6
+          .thumbnail
+            i.glyphicon.glyphicon-tree-deciduous.bg-warning.img-circle
+            .caption
+              h3 睡覺
+              p 
+                | 因為沒有事情做只好一直睡覺一直睡覺...
+        .col-md-4.col-sm-6
+          .thumbnail
+            i.glyphicon.glyphicon-flag.bg-warning.img-circle
+            .caption
+              h3 打東東
+              p 請問這邊有人叫東東的嗎？
+  #works.section.bg-info
+    .container
+      .row.text-center
+        h1 聯絡我們
+        from.form-horizontal
+          .col-md-12
+            .form-group
+              label.col-sm-2.control-label(for="inputName") 姓名
+              .col-sm-10
+                input(type="text" class="form-control" id="inputName" placeholder="Name")
+            .form-group
+              label.col-sm-2.control-label(for="inputEmail") Email
+              .col-sm-10
+                input(type="email" class="form-control" id="inputEmail" placeholder="Email")
+            .form-group
+              label.col-sm-2.control-label 留言給我
+              .col-sm-10
+                textarea.form-control(rows="4" placeholder="請您留下給我的訊息")
+          .col-md-12
+            button.btn.btn-success.btn-lg.pull-right(type="submit" class="btn btn-skin pull-right" id="btnContactUs")
+              | 送出
+
+  //- h1= title
+  //- p Welcome to #{title}

@@ -1,0 +1,22 @@
+body {
+  /*padding: 50px;*/
+  position: relative;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.header-bg{
+  background: url("http://placekitten.com/g/1024/300");
+  background-size: 100% 65%;
+  background-attachment: fixed;  
+  height: 400px;
+}
+.section{
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.thumbnail > i{
+  font-size: 100px;
+}

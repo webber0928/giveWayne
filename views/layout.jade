@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title= title
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(data-spy="scroll" data-target="#bs-example-navbar-collapse-1")
+    .header-bg
+      .section
+        .container
+          .row
+            h1.text-right.text-primary 嘿！歡迎你來到這裡
+    .header
+      nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') MyPage
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav(role="tablist")
+              li.active
+                a(href='#about') About 
+                  span.sr-only (current)
+              li
+                a(href='#works') Works
+    
+    block content
+    .footer
+      .container
+        span.navbar-text.navbar-right © 2015. Bootstrap web view.
+    script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+    script(src='javascripts/main.js')
